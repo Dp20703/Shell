@@ -1,0 +1,6 @@
+if [ -f $1 ]
+then
+echo "This file is oridinary "
+else
+echo "Not oridinary file"
+fi

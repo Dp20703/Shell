@@ -1,0 +1,15 @@
+countD=0
+countF=0
+for i in *
+do
+if [ -d $i ]
+then
+countD=`expr $countD + 1`
+fi
+if [ -f $i ]
+then
+countF=`expr $countF + 1`
+fi
+done
+echo "Number of directories: $countD"
+echo "Number of files: $countF"

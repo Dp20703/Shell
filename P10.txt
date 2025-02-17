@@ -1,0 +1,14 @@
+
+# Get the current hour (24-hour format)
+hour=$(date +"%H")
+
+# Determine the time of day and display an appropriate message
+if [ "$hour" -ge 5 ] && [ "$hour" -lt 12 ]; then
+    echo "Good Morning! Have a great day! ☀️"
+elif [ "$hour" -ge 12 ] && [ "$hour" -lt 17 ]; then
+    echo "Good Afternoon! Hope you're having a productive day! 🌤️"
+elif [ "$hour" -ge 17 ] && [ "$hour" -lt 21 ]; then
+    echo "Good Evening! Enjoy your evening! 🌆"
+else
+    echo "Good Night! Have a restful sleep! 🌙"
+fi

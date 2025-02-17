@@ -1,0 +1,9 @@
+echo "Enter filename"
+read fe
+if [ -d $fe ]
+then
+echo "It's directory"
+ls "$fe"
+else
+echo "It's not a directory"
+fi

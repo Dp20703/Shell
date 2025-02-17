@@ -1,0 +1,8 @@
+echo "Enter filename"
+read fe
+if [ -e "$fe" ] && [ -r  "$fe" ]; then
+    echo "File exists and is executable"
+        cat "$fe"
+        else
+            echo "File does not exist or is not executable"
+            fi

@@ -1,0 +1,36 @@
+echo "Enter file1"
+read file1
+echo "Enter file2"
+read file2
+
+cmp "$file1" "$file2"
+c="$?"
+if [ $c -eq 0 ];then
+echo "Both files are same"
+rm "$file2"
+else
+echo "Both files are different"
+fi
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"demo.sh" 13L, 191C                                                                                                                  1,1           All

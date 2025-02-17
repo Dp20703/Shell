@@ -1,0 +1,60 @@
+while true;
+do
+echo "\n Menu"
+echo "1. Calender of the current month and year"
+echo "2. Display greeting based on current working time "
+echo "3. Show username and home directory"
+echo "4. show terminal name and type"
+echo "5. Show manchine name"
+echo "6. Show numbers logged in users and list of users"
+echo "7. Exit."
+read -p "Enter your choice [1-7]:" ch
+
+case $ch in
+1)
+echo -e  "\n Calender of current month & year"
+cal
+;;
+2)
+hour=$( date +"%H" )
+if [ $hour -lt 12 ];then
+echo "Good morning"
+elif [ $hour -lt 18 ];then
+echo "Good afternoon"
+else
+echo "Good evening"
+fi
+;;
+3)
+echo -e  "\n Username: $(whoami)  "
+echo  "Home Directory: $HOME "
+;;
+
+4)
+read -p  "Enter Source File:" sFile
+if [ -f "$sFile" ];then
+read -p "Enter destination file:" dFile
+if [ -f "$dFile" ];then
+mv "$sFile" "$dFile"
+echo "File $sFile Copied to $dFile "
+fi
+else
+echo "File $sFile doesn't exist"
+fi
+;;
+
+5)
+echo "Exiting the Script. Good Bye!"
+break
+;;
+
+*)
+echo "Invalid option, Choose from 1-5 "
+;;
+
+esac
+
+echo -e "\n Press Enter to continue..."
+read
+done
+                                                                                                                                     1,1         

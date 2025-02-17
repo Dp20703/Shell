@@ -1,0 +1,31 @@
+echo "Enter choice "
+echo "1) sort file "
+echo "2) execute commands "
+echo "3) print message "
+echo "4) Display version "
+echo "5) set online help "
+
+read -p "Enter your choice [1-5]: " choice
+case $choice in
+   1)
+   echo "Sorting file abc.txt and saving it to xyz.txt... "
+   sort abc.txt > xyz.txt
+   echo "File sorted and saved in xyz.txt "
+   ;;
+   2)
+   echo "Exceutingn commands together without affecting each other .... "
+   echo "First command exceuted "; echo "Second commmnad exceuted "
+   ;;
+   3)
+   echo "Printing this is a tree-line text message "
+   ;;
+   4)
+   echo "Displaying version of unix..."
+   uname -a
+   ;;
+   5)
+   man cat
+   ;;
+   *)
+   echo "Invalid choice "
+esac

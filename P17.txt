@@ -1,0 +1,12 @@
+echo "Enter first filename:"
+read fn1
+echo "Enter second filename:"
+read fn2
+
+if [ -f "$fn1" ] && [ -f "$fn2" ]; then
+    echo "Both files exist."
+    cat "$fn2" >> "$fn1"
+    echo "Contents of $fn2 appended to $fn1."
+else
+    echo "One or both files do not exist."
+fi

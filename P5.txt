@@ -1,0 +1,32 @@
+echo "Select the option"
+echo "1) Display hidden files"
+echo "2) Deleting directry with files "
+echo "3) Interative copying "
+echo "4)interative deletion "
+echo "5)exit"
+read -p "Enter the option ", choice
+
+case $choice in
+        1) echo "Dispaly hidden files "
+        ls -a
+        ;;
+        2)
+        read -p "Enter directory to delete ", dir
+        echo "Deleting direcotry "$dir" and contents "
+        rm -rf "$dir"
+        ;;
+        3)
+        read -p "Enter source file:" source
+        read -p "Enter destination file:" destination
+        echo "Performing intereactive copy...."
+        cp -i "$source" "$destination"
+        ;;
+        4)
+        read -p "Enter file to delet: " file
+        echo "Performing interative delete.."
+        rm -i "$file"
+        ;;
+        5)
+        echo "1 to rename the file "
+        echo "2 to move the files to different location "
+        read -p "Enter choice " c

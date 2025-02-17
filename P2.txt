@@ -1,0 +1,9 @@
+echo "enter filename"
+read filename
+
+if [ -f "$filename" ];then
+path=$(realpath "$filename")
+echo "full path of file  is : $path "
+else
+echo "File "$filename" does not exist "
+fi

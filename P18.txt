@@ -1,0 +1,29 @@
+echo "1. Display the content of two files"
+echo "2. Display the message"
+echo "3. Copy the files"
+read ch
+
+echo "Enter the filename "
+read n
+echo "Enter the copy filename"
+read file
+
+case $ch in
+1) cat "$n"
+cat "$file"
+;;
+
+2)
+echo "Displaying the content of file"
+cat "$n"
+echo "Displaying the content page wise"
+cat "$file" | more "$n"
+;;
+3)
+cp "$n" "$file"
+echo "Files copied successfully"
+
+;;
+*)
+echo "invalid option"
+esac

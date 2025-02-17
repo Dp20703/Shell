@@ -1,0 +1,9 @@
+read -p "Enter file name: " filename
+
+if [ -f "$filename" ]; then
+    echo -n  "Last modification time of $filename is: "
+       # ls -l "$filename" | cut -c 52-57
+       ls -l "$filename" | awk '{print $6, $7, $8 }'
+else
+     echo "The file $filename does not exist."
+fi

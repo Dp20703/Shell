@@ -1,0 +1,65 @@
+while true;
+do
+echo -e "\nMenu"
+echo "1. Concetation two strings"
+echo "2. Rename a file"
+echo "3. Delete a file"
+echo "4. Copy a file to a specific location with explantion"
+echo "5. Exit"
+read -p "Enter your choice from [1-5]:" ch
+case $ch in
+1)
+read -p "Enter first String:" str1
+read -p "Enter Second String:" str2
+result="${str1}${str2}"
+echo "Concatenated String: $result"
+;;
+
+2)
+read -p "Enter file to rename:" file
+if [ -f "$file" ];then
+read -p "Enter new file:" newFile
+mv "$file" "$newFile"
+echo "File renamed $file to $newFile "
+else
+echo "File $file not found"
+fi
+;;
+
+3)
+read -p "Enter file to deleted:" delFile
+if [ -f "$delFile" ]; then
+rm "$delFile"
+echo "File $delFile deleted"
+else
+echo "File $delFile doesn't exist"
+fi
+;;
+
+4)
+read -p  "Enter Source File:" sFile
+if [ -f "$sFile" ];then
+read -p "Enter destination file:" dFile
+if [ -f "$dFile" ];then
+mv "$sFile" "$dFile"
+echo "File $sFile Copied to $dFile "
+fi
+else
+echo "File $sFile doesn't exist"
+fi
+;;
+
+5)
+echo "Exiting the Script. Good Bye!"
+break
+;;
+
+*)
+echo "Invalid option, Choose from 1-5 "
+;;
+
+esac
+
+echo -e "\n Press Enter to continue..."
+read
+done
