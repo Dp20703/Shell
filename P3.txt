@@ -17,7 +17,7 @@ case $choice in
    echo "First command exceuted "; echo "Second commmnad exceuted "
    ;;
    3)
-   echo "Printing this is a tree-line text message "
+   echo -e "Printing \n this is a tree-line \ntext message "
    ;;
    4)
    echo "Displaying version of unix..."
