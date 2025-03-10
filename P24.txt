@@ -11,26 +11,4 @@ rm "$file2"
 else
 echo "Both files are different"
 fi
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-"demo.sh" 13L, 191C                                                                                                                  1,1           All
+                                                                                                                 1,1           All
