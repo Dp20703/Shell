@@ -1,0 +1,36 @@
+#41. Write a shell script that toggles contents of the file
+
+read -p "Enter file name: " x
+if [ -f $x ];then
+echo "Here is the original content of file [ $x ]:"
+cat $x
+echo ""
+echo "Here is the toggle content of the file [ $x]:"
+tac $x
+echo ""
+echo "Here is the toggle characters of the file [$x]:"
+tr 'a-zA-Z' 'A-Za-z' < $x
+echo ""
+else
+echo "file doesn't exist"
+fi
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+:w

@@ -1,0 +1,36 @@
+echo "Largest files:"
+ls -S | head -5
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+Type  :quit<Enter>  to exit Vim                                                                                                      1,1           All

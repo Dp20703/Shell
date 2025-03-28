@@ -1,0 +1,36 @@
+#d=$(date +%u)  # Get the day of the week (1=Monday, 7=Sunday)
+d=` date +%u `
+
+if [ $d -gt 5 ]; then
+    echo "It is a Weekend"
+    else
+        echo "It is a Weekday"
+        fi
+
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+Type  :quit<Enter>  to exit Vim                                                                                                      6,1           All

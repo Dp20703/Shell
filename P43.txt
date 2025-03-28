@@ -1,0 +1,36 @@
+FORM="DP@gmail.com"
+TO="drp20703@gmail.com"
+SUBJECT="TEST Email"
+BODY="THIS IS A TEST BODY OF EMAIL IN SHELL SCRIPT"
+
+
+echo "$BODY" | mail -s "$SUBJECT" -r "$FROM" "$TO"
+
+echo "Mail is succesfully sent"
+
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"email.sh" 10L, 204C                                                                                                                 1,1           All

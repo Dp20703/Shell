@@ -1,0 +1,36 @@
+read -p "Enter file1:" x
+read -p "Enter file2:" y
+read -p "Enter file3:" z
+
+if [ -f  $x ] && [ -f $y ]
+then
+echo "Both files [ $x ] and  [$y] exists !!"
+echo "Now combine content of both file vertically:"
+cat $x >> $z
+cat $y >> $z
+cat $z
+echo ""
+echo "now combine content horizontally..."
+#paste
+join -d " " $x $y >> $z
+cat $z
+else
+echo "File doesn't exist"
+fi
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"file.sh" 19L, 361C                                                                                                                  1,1           All

@@ -1,0 +1,36 @@
+while true
+do
+echo "Select one"
+echo "1. Ascending word"
+echo "2. Desceding word"
+echo "3. Toggle words"
+echo "4. Display the type of file"
+echo "5. exit "
+read -p "Enter your choice:" ch
+case $ch in
+
+1)
+read -p "Enter file :" file
+if [ -f $file ];then
+echo "Words in Asceding in file [$file] is ...:"
+sort $file
+else
+echo "File does't exist "
+fi
+
+;;
+2)
+ read -p "Enter file name: " file
+             if [ -f "$file" ]; then
+                             echo "Sorted file content (Reverse Order):"
+                                             sort -r "$file"
+                                                         else
+                                                                         echo "File doesn't exist."
+                                                                                     fi
+                                                                                                 ;;
+
+
+3)
+read  -p "Enter file :" file
+if [ -f $file ];then
+Type  :quit<Enter>  to exit Vim                                                                                                      28,1-8        Top

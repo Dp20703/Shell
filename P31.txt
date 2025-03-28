@@ -1,0 +1,36 @@
+echo "Last modified file and in the current directory"
+ls -t | head -1
+
+echo "Last modified time is ..."
+ls -lt | sed -n '2p' | cut -c 52-57
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"file.sh" 5L, 141C                                                                                                                   1,1           All

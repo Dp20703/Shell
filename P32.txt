@@ -1,0 +1,36 @@
+echo "Enter chooice"
+echo "1.Enter two months :"
+echo "2. Enter two months between"
+
+
+ read -p "enter choice " ch
+ case $ch in
+1)
+read -p "Enter first month " x
+read -p "Enter second month " y
+echo ""
+cal $x  2025 ;  cal $y 2025
+;;
+2)
+read -p "Enter first month " x
+read -p "Enter second month " y
+echo ""
+for (( i = x; i <= y; i++ ))
+do
+ cal $i 2025
+done
+;;
+*)
+echo "invalid option";
+exit
+esac
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"cal.sh" 26L, 397C                                                                                                                   1,1           All

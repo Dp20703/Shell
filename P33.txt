@@ -1,0 +1,36 @@
+#Write a script to display the permissions of the particular file.
+
+
+
+read -p "Enter file name: " fi
+
+if [ -f $fi ];then
+ls -l $fi
+
+else
+echo "File does't exist"
+
+fi
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"pp.sh" 13L, 166C                                                                                                                    1,1           All

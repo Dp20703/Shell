@@ -1,0 +1,36 @@
+echo "Enter name of user"
+read name
+
+if cut -d: -f1 /etc/passwd | grep -w "$name"
+then
+echo "User [$name] is logged in "
+else
+echo "user [$name] is not logged in "
+fi
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+Type  :quit<Enter>  to exit Vim                                                                                                      1,1           All

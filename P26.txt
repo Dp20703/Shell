@@ -1,0 +1,36 @@
+while true
+do
+echo "Choose form blow"
+echo "1.Home directory"
+echo "2.To Print date:"
+echo "3.to print working directory"
+echo "4.to diplay userlogged in "
+echo "5. exit"
+read -p "please enter option" c
+case $c in
+1)
+echo "Home directory"
+ls ~
+ls $home
+;;
+2)
+echo "date:"
+date +%D
+;;
+3)
+echo "pwd:"
+pwd;;
+4)
+whoami
+;;
+5)
+echo "Exiting...."
+exit 0
+;;
+*)
+echo "invalid option"
+esac
+echo ""
+done
+
+"home.sh" 35L, 394C                                                                                                                  1,1           All

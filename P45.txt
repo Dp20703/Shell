@@ -1,0 +1,36 @@
+while true
+do
+read -p "Enter choice:" ch
+case $ch in
+1)
+echo "Displaying names"
+cut -d' ' -f2 student2.txt| sort -f
+;;
+2)
+echo "Dipsplaying marks descending order:"
+sort -t' ' -k3,3nr  student2.txt
+;;
+3)
+echo "Displaying as per roll no "
+sort -n student2.txt
+;;
+4)
+echo "Sorting name as per name"
+sort -t' ' -k2,2 student2.txt > names.txt
+echo "Sorted to names.txt"
+;;
+5)
+echo "Displaying students who scored 70 to 80"
+awk '$3 >=70 && $3 <=80' student2.txt
+;;
+6)
+echo "Good Bye"
+exit 0
+;;
+*)
+echo "invalid option"
+esac
+echo ""
+done
+~
+"file.sh" 34L, 536C                                                                                                                  1,1           All

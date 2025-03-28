@@ -1,0 +1,36 @@
+echo "Total numbers of users:.."
+cat /etc/passwd | wc -l
+
+echo "How many of them are currently logged in "
+whoami
+whoami  | wc -l
+
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"user.sh" 7L, 131C                                                                                                                   1,1           All

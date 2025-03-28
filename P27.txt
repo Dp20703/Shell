@@ -1,0 +1,36 @@
+echo "Hidden files in home directory"
+ls -a ~
+#ls -a | grep "^\."
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --                                                                                                                         2,1           All

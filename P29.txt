@@ -1,0 +1,36 @@
+read -p "Enter file name:" file
+if [ -f $file ];then
+
+echo "All spaces from the file is Removed Successfully..."
+cat $file | tr -d " " > $file
+cat $file
+
+else
+echo "File doesn't exist"
+fi
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"file.sh" 10L, 188C                                                                                                                  1,1           All

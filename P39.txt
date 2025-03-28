@@ -1,0 +1,36 @@
+read -p "Enter directory :" d
+
+if [ -d $d ];then
+ls -l $d  | awk 'NR>1 {print $10, $6, $7, $8, $9, $1, $3 }'
+
+else
+echo "[$d] doesn't exist"
+fi
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"hp.sh" 8L, 145C                                                                                                                     1,1           All
